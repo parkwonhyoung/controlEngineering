@@ -32,7 +32,7 @@ t = np.linspace(0, 10, 1000)  # 시간 범위 설정
 u = np.ones_like(t)  # 단위계단입력 생성
 
 # 응답곡선 계산
-t, y = signal.step((numH, denH), T=t)
+t, y = signal.step((numG, den), T=t)
 
 # 응답곡선 그래프 그리기
 plt.plot(t, y)
